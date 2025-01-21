@@ -9,10 +9,13 @@ def benchmarkFetchTicker(exchange, symbol):
     startTime = time.time() # Record the start time before the API call
     ticker = exchange.fetch_ticker(symbol)
     endTime = time.time() # Record the end time after the API call
+    timeTaken = endTime - startTime  # Calculate elapsed time
+    
+    price = ticker['last']  # Get the latest price
 
-    # Print how long it took for this exchange to return the ticker
-    print(f"{exchange.id}: {endTime - startTime:.6f} seconds")
-    return ticker
+    # Print the exchange name, price, and time taken
+    print(f"{exchange.id}: Price = ${price:.2f}, Time = {timeTaken:.6f} seconds")
+    return price, timeTaken
 
 # Test Code
 if __name__ == "__main__":
