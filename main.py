@@ -15,6 +15,7 @@ def benchmarkFetchTicker(exchange, symbol):
 
     # Print the exchange name, price, and time taken
     print(f"{exchange.id}: Price = ${price:.2f}, Time = {timeTaken:.6f} seconds")
+    
     return price, timeTaken
 
 # Test Code
