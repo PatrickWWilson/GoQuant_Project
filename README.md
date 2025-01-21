@@ -1,2 +1,4 @@
 # GoQuant_Project
-Python project using CCXT for benchmarking and time measurement
+This project benchmarks cryptocurrency exchange APIs using the CCXT library. It includes:
+- Measuring execution time for API calls.
+- Fetching market data from multiple exchanges.
