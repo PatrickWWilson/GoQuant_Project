@@ -17,7 +17,7 @@ def benchmarkFetchTicker(exchange, symbol):
 # Test Code
 if __name__ == "__main__":
     symbol = "BTC/USDT"
-    exchanges = [ccxt.binance(), ccxt.kraken(), ccxt.coinbasepro()] # A list of exchange APIs to test
+    exchanges = [ccxt.binance(), ccxt.kraken(), ccxt.coinbase()] # A list of exchange APIs to test
 
     print(f"Checking {symbol} prices and timing the API responses...\n")
     
